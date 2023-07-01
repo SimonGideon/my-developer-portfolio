@@ -37,12 +37,12 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+           I am also a passionate developer who constantly strives to improve my skills and mastery 
+           of new concepts and employ pair-programming and learning the best practices of architecture 
+           using React and Ruby on Rails , while having scalability, maintainability, and user needs in 
+           mind. Other skills that complement the aforementioned include software testing, version control, 
+           building Progressive Web Applications, CI, and design thinking for 
+           building user-centered solutions which I find crucial in the Software Development process.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
