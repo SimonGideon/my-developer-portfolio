@@ -76,10 +76,7 @@ const technologies = [
     name: 'JavaScript',
     icon: javascript,
   },
-  {
-    name: 'TypeScript',
-    icon: typescript,
-  },
+
   {
     name: 'React JS',
     icon: reactjs,
@@ -100,14 +97,12 @@ const technologies = [
     name: 'Rails',
     icon: rubyrails,
   },
-  {
-    name: 'graphql',
-    icon: graphql,
-  },
+
   {
     name: 'postgresql',
     icon: postgresql,
   },
+
   {
     name: 'git',
     icon: git,
@@ -115,10 +110,6 @@ const technologies = [
   {
     name: 'figma',
     icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
   },
 ];
 
