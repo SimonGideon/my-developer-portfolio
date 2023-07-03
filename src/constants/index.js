@@ -147,8 +147,8 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'THE GLOBAL UN REFUGEE SUMMIT 2022 Advert',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'GLOBAL UN REFUGEE SUMMIT',
+    description: 'UN Global Summit Advertisement Page that gives information to attendees about the Summit',
     tags: [
       {
         name: 'react',
