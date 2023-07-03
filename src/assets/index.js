@@ -48,7 +48,7 @@ import globalsummit from './projects/global-sumit.png';
 import reservation from './projects/reservation.jpeg';
 import bookstore from './projects/bookstore.jpeg';
 import metric from './projects/metric-app.png';
-import nyeusi from './projects/nyeusi.png';
+import spaceTravellers from './projects/space-travellers.jpeg';
 import space from './projects/space-hub.png';
 
 export {
@@ -91,7 +91,7 @@ export {
   reservation,
   bookstore,
   metric,
-  nyeusi,
+  spaceTravellers,
   space,
   coverhunt,
   dcc,

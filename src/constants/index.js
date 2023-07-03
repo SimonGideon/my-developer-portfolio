@@ -21,7 +21,7 @@ import {
   reservation,
   bookstore,
   metric,
-  nyeusi,
+  spaceTravellers,
   space,
   coverhunt,
   dcc,
@@ -236,9 +236,9 @@ const projects = [
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Space Travellers App',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
+      'Web application for commercial and scientific space travel services allows booking and joining rocket space missions.',
     tags: [
       {
         name: 'nextjs',
@@ -253,9 +253,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
+    image: spaceTravellers,
+    repo: 'https://github.com/SimonGideon/space-travelers',
+    demo: 'https://space-travelers-iyfi.onrender.com/',
   },
 ];
 
