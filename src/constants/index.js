@@ -17,8 +17,8 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
-  leaderboard,
+  globalsummit,
+  reservation,
   math,
   movie,
   nyeusi,
@@ -163,15 +163,15 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
+    image: globalsummit,
     repo: 'https://github.com/shaqdeff/KomiKult',
     demo: 'https://shaqdeff.github.io/KomiKult/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Alpha Reservation',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'A reservation list app that displays scores submitted by different players.',
     tags: [
       {
         name: 'react',
@@ -186,7 +186,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
+    image: reservation,
     repo: 'https://github.com/shaqdeff/Leaderboard',
     demo: 'https://shaqdeff.github.io/Leaderboard/',
   },

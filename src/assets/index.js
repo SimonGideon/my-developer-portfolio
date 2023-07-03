@@ -44,8 +44,8 @@ import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 
 // projects images
-import komikult from './projects/global-sumit.png';
-import leaderboard from './projects/leaderboard.png';
+import globalsummit from './projects/global-sumit.png';
+import reservation from './projects/reservation.jpeg';
 import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
@@ -87,8 +87,8 @@ export {
   redux,
   tailwind,
   typescript,
-  komikult,
-  leaderboard,
+  globalsummit,
+  reservation,
   math,
   movie,
   nyeusi,
