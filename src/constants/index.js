@@ -19,8 +19,8 @@ import {
   graphql,
   globalsummit,
   reservation,
-  math,
-  movie,
+  bookstore,
+  metric,
   nyeusi,
   space,
   coverhunt,
@@ -164,14 +164,14 @@ const projects = [
       },
     ],
     image: globalsummit,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    repo: 'https://github.com/SimonGideon/capstone-project---Conference-page/tree/Capstone-milestone',
+    demo: 'https://simongideon.github.io/capstone-project---Conference-page/',
   },
   {
     id: 'project-2',
     name: 'Alpha Reservation',
     description:
-      'A reservation list app that displays scores submitted by different players.',
+      'A reservation app that allows users to reserve a house and pay per night',
     tags: [
       {
         name: 'react',
@@ -187,13 +187,13 @@ const projects = [
       },
     ],
     image: reservation,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+    repo: 'https://github.com/SimonGideon/book-an-appointment-frontend',
+    demo: 'https://book-an-appointment-frontend-jt6ulk7xq-jmonto55.vercel.app/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    name: 'Bookstore',
+    description: 'React App that enables the user to add and see list of books from external API',
     tags: [
       {
         name: 'nextjs',
@@ -208,14 +208,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
-    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    image: bookstore,
+    repo: 'https://github.com/SimonGideon/BookstoreApp',
+    demo: 'https://book-stores.onrender.com/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
+    name: 'Metric App',
+    description: `A single-page application that shows the statistics if the Population in african countries.`,
     tags: [
       {
         name: 'nextjs',
@@ -230,9 +230,9 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
+    image: metric,
+    repo: 'https://github.com/SimonGideon/-React-capstone-project',
+    demo: 'https://metric-app.onrender.com/',
   },
   {
     id: 'project-5',

@@ -46,8 +46,8 @@ import microverse from './company/microverse.png';
 // projects images
 import globalsummit from './projects/global-sumit.png';
 import reservation from './projects/reservation.jpeg';
-import math from './projects/math-magicians.png';
-import movie from './projects/movie-metro.png';
+import bookstore from './projects/bookstore.jpeg';
+import metric from './projects/metric-app.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
@@ -89,8 +89,8 @@ export {
   typescript,
   globalsummit,
   reservation,
-  math,
-  movie,
+  bookstore,
+  metric,
   nyeusi,
   space,
   coverhunt,
