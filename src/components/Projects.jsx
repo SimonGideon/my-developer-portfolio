@@ -131,7 +131,6 @@ const Projects = () => {
           oversee projects.
         </motion.p>
       </div>
-
       <motion.div
         variants={staggerContainer}
         initial="hidden"

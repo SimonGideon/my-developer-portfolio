@@ -147,7 +147,7 @@ const experiences = [
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
+    name: 'THE GLOBAL UN REFUGEE SUMMIT 2022 Advert',
     description: 'A comic characters list app that displays Marvel characters.',
     tags: [
       {
