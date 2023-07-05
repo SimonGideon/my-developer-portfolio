@@ -75,7 +75,7 @@ const ProjectCard = ({
               font-poppins tracking-[1px]">
               {description}
             </p>
-            <div>
+            <div className='flex flex-row justify-between'>
               <button
                 className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
@@ -104,10 +104,17 @@ const ProjectCard = ({
                 />
                 LIVE DEMO
               </button>
-              <div>
-              {stack.map((item, index) => (
-                <img src={item} alt={item} key={index} className="w-[30px] h-[30px] object-contain" />))};
+              <div className='flex flex-row items-center'>
+                {stack.map((item, index) => (
+                  <img
+                    src={item}
+                    alt={item}
+                    key={index}
+                    className={`w-[30px] h-[30px] ${index !== 0 ? '-ml-1' : ''} backdrop:to-black`}
+                  />
+                ))}
               </div>
+
             </div>
           </div>
         </>

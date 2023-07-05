@@ -165,9 +165,9 @@ const projects = [
     stack: [
       reactjs,
       redux,
+      postgresql,
       tailwind,
       rubyrails,
-      postgresql
     ]
   },
   {
