@@ -134,11 +134,11 @@ const projects = [
     image: globalsummit,
     repo: 'https://github.com/SimonGideon/capstone-project---Conference-page/tree/Capstone-milestone',
     demo: 'https://simongideon.github.io/capstone-project---Conference-page/',
-    stack: [{
+    stack: [
       html,
       css,
       javascript
-    }]
+    ]
   },
   {
     id: 'project-2',
@@ -162,13 +162,13 @@ const projects = [
     image: reservation,
     repo: 'https://github.com/SimonGideon/book-an-appointment-frontend',
     demo: 'https://book-an-appointment-frontend-jt6ulk7xq-jmonto55.vercel.app/',
-    stack: [{
+    stack: [
       reactjs,
       redux,
       tailwind,
       rubyrails,
       postgresql
-    }]
+    ]
   },
   {
     id: 'project-3',
@@ -191,11 +191,11 @@ const projects = [
     image: bookstore,
     repo: 'https://github.com/SimonGideon/BookstoreApp',
     demo: 'https://book-stores.onrender.com/',
-    stack: [{
+    stack: [
       reactjs,
       redux,
       css
-    }]
+    ]
   },
   {
     id: 'project-4',
@@ -218,12 +218,12 @@ const projects = [
     image: metric,
     repo: 'https://github.com/SimonGideon/-React-capstone-project',
     demo: 'https://metric-app.onrender.com/',
-    stack: [{
+    stack: [
       reactjs,
       redux,
       css,
       tailwind
-    }]
+    ]
   },
   {
     id: 'project-5',
@@ -247,12 +247,12 @@ const projects = [
     image: spaceTravellers,
     repo: 'https://github.com/SimonGideon/space-travelers',
     demo: 'https://space-travelers-iyfi.onrender.com/',
-    stack: [{
+    stack: [
       reactjs,
       redux,
       css,
       tailwind,
-    }]
+    ]
   },
 ];
 
