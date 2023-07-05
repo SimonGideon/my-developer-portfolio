@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
@@ -5,8 +6,26 @@ import { navLinks } from '../constants';
 import { simon, bwmap, worldmap } from '../assets';
 
 const Hero = () => {
+  const [space, setSpace] = useState('\u00A0');
+
+  useEffect(() => {
+    const updateSpace = () => window.innerWidth <= 768? setSpace(' ') : setSpace('\u00A0');
+
+    updateSpace();
+
+    // Update space variable when the window is resized
+    window.addEventListener('resize', updateSpace);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', updateSpace);
+    };
+  }, []);
   return (
     <>
+      <div className="hidden md:block lg:hidden">
+        {`let space = " "`};
+      </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
           src={bwmap}
@@ -39,14 +58,14 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
               Hi, I'm{' '}
               <span
-                className="sm:text-battleGray sm:text-[90px] 
+                className="sm:text-battleGray  sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Simon Gideon
+                Simon{`${space}`}Gideon
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-            A Full-stack Web developer <br className="sm:block hidden" />
+              A Full-stack Web developer <br className="sm:block hidden" />
             </p>
           </div>
           <div
