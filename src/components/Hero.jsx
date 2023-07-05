@@ -10,13 +10,8 @@ const Hero = () => {
 
   useEffect(() => {
     const updateSpace = () => window.innerWidth <= 768? setSpace(' ') : setSpace('\u00A0');
-
     updateSpace();
-
-    // Update space variable when the window is resized
     window.addEventListener('resize', updateSpace);
-
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', updateSpace);
     };
