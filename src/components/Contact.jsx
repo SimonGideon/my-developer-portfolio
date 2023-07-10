@@ -6,6 +6,7 @@ import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import { send, sendHover } from '../assets';
+import validator from 'validator'
 
 const Contact = () => {
   const formRef = useRef();
@@ -14,14 +15,23 @@ const Contact = () => {
     email: '',
     message: '',
   });
+  const [emailError, setEmailError] = useState('')
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
+    // email validation
+    const email = e.target.value
+    if (validator.isEmail(email)) {
+      setEmailError('')
+    } else {
+      setEmailError('Enter valid Email!')
+    }
+    // handle form data
     const { name, value } = e.target;
 
     setForm({ ...form, [name]: value });
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -102,6 +112,10 @@ const Contact = () => {
               text-timberWolf rounded-lg outline-none
               border-none font-medium" required
             />
+            <br />
+            <span style={{
+              color: 'red',
+            }}>{emailError}</span>
           </label>
           <label className="flex flex-col">
             <span className="text-timberWolf font-medium mb-4">

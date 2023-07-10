@@ -23,7 +23,8 @@
     "react-vertical-timeline-component": "^3.6.0",
     "sweetalert": "^2.1.2",
     "three": "^0.152.2",
-    "use": "^3.1.1"
+    "use": "^3.1.1",
+    "validator": "^13.9.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
