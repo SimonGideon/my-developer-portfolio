@@ -51,6 +51,11 @@ import metric from './projects/metric-app.png';
 import spaceTravellers from './projects/space-travellers.jpeg';
 import space from './projects/space-hub.png';
 
+// import socail icons
+import instagram from './socials/instagram.svg';
+import linkedin from './socials/linkedin.svg';
+import twitter from './socials/twitter.svg';
+
 export {
   bwmap,
   nairobi,
@@ -97,4 +102,7 @@ export {
   dcc,
   kelhel,
   microverse,
+  instagram,
+  linkedin,
+  twitter,
 };
