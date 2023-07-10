@@ -86,7 +86,7 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium" required
             />
           </label>
           <label className="flex flex-col">
@@ -100,7 +100,7 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium"
+              border-none font-medium" required
             />
           </label>
           <label className="flex flex-col">
@@ -116,7 +116,7 @@ const Contact = () => {
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
-              border-none font-medium resize-none"
+              border-none font-medium resize-none" required
             />
           </label>
 
