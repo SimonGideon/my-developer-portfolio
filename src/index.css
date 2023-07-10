@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* handle sweet alert */
+.swal-button {
+  background-color: #434343 !important;
+}
+
 @font-face {
   font-family: 'Arenq';
   src: url('./fonts/arenq.otf');
