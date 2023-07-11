@@ -18,57 +18,68 @@ const Contact = () => {
   const [emailError, setEmailError] = useState('')
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    // email validation
-    const email = e.target.value
+  const handleValidation = (email) => {
+    // Email validation
     if (validator.isEmail(email)) {
-      setEmailError('')
+      setEmailError('');
     } else {
-      setEmailError('Enter valid Email!')
+      setEmailError('Enter a valid email!');
     }
-    // handle form data
+  };
+
+  const handleChange = (e) => {
     const { name, value } = e.target;
 
+    // Update the form state
     setForm({ ...form, [name]: value });
+
+    // Perform validation for the email field
+    if (name === 'email') {
+      handleValidation(value);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs
-      .send(
-        'service_tmz3lye',
-        'template_gh1wsu5',
-        {
-          from_name: form.name,
-          to_name: 'Simon Gideon',
-          from_email: form.email,
-          to_email: 'simongideon918@gmail.com',
-          message: form.message,
-        },
-        'RRhuQysRw3tCC4ITi',
-      )
-      .then(
-        () => {
-          setLoading(false);
-          swal({
-            title: "Message Sent!",
-            text: "I'll get back to you as soon as possible.",
-            icon: "success",
-          });
+    if (emailError) {
+      return;
+    } else {
+      setLoading(true);
+      emailjs
+        .send(
+          'service_tmz3lye',
+          'template_gh1wsu5',
+          {
+            from_name: form.name,
+            to_name: 'Simon Gideon',
+            from_email: form.email,
+            to_email: 'simongideon918@gmail.com',
+            message: form.message,
+          },
+          'RRhuQysRw3tCC4ITi',
+        )
+        .then(
+          () => {
+            setLoading(false);
+            swal({
+              title: "Message Sent!",
+              text: "I'll get back to you as soon as possible.",
+              icon: "success",
+            });
 
-          setForm({
-            name: '',
-            email: '',
-            message: '',
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert('Something went wrong. Please try again.');
-        }
-      );
+            setForm({
+              name: '',
+              email: '',
+              message: '',
+            });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+            alert('Something went wrong. Please try again.');
+          }
+        );
+    }
   };
 
   return (
