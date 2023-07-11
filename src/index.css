@@ -28,7 +28,6 @@
   float: right;
   position: fixed;
   top: 80vh;
-  right: 0;
   z-index: 9999;
   right: 1rem;
 }
@@ -41,8 +40,8 @@
 }
 
 .social-media-button {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   outline: 2px solid white;
   cursor: pointer;
@@ -88,10 +87,21 @@
   50% {
     box-shadow: 0 0 10px #60a5fa;
   }
-  /* 100% {
-    box-shadow: 0 0 5px #ff0000;
-  } */
 }
+
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-move {
+  animation: move 1s linear;
+}
+
 
 @font-face {
   font-family: 'Arenq';

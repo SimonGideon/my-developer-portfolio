@@ -1,7 +1,7 @@
 import { instagram, linkedin, twitter } from "../assets"
 const socials = () => {
     return (
-        <span className="relative background">
+        <span className=" animate-move relative background">
             <span className="social-media-buttons">
                 <span className="social-media-button">
                     <a href="https://www.instagram.com/simon_gideon_/">
