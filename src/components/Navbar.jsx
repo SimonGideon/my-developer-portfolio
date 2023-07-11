@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { close, menu, logo, logotext } from '../assets';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
@@ -10,16 +11,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed 
+      className={`${styles.paddingX} w-full flex items-center py-0.5 fixed 
       top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
-        <Link
-          to="/"
+        <ScrollLink
+          to="home"
           className="flex items-center gap-2"
           onClick={() => {
             setActive('');
-            window.scrollTo(0, 0);
-          }}>
+            scroll.scrollToTop();
+          }}
+          smooth={true}
+          duration={500}
+        >
           <img
             src={logo}
             alt="logo"
@@ -30,7 +34,7 @@ const Navbar = () => {
             alt="logo"
             className="sm:w-[90px] sm:h-[90px] w-[85px] h-[85px] -ml-[0.6rem] object-contain"
           />
-        </Link>
+        </ScrollLink>
         <ul className="list-none hidden sm:flex flex-row gap-14 mt-2 ">
           {navLinks.map((nav) => (
             <li
@@ -38,8 +42,16 @@ const Navbar = () => {
               className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
                 } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
-              onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              onClick={() => setActive(nav.title)}
+            >
+              <ScrollLink
+                to={nav.id}
+                smooth={true}
+                duration={600}
+                offset={-70}
+              >
+                {nav.title}
+              </ScrollLink>
             </li>
           ))}
         </ul>
@@ -50,7 +62,8 @@ const Navbar = () => {
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 
                 top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'
-                }`}>
+                }`}
+            >
               <div className="flex justify-end">
                 <img
                   src={close}
@@ -59,7 +72,8 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <ul id="mobile-nav"
+              <ul
+                id="mobile-nav"
                 className="list-none flex flex-col -gap-[1rem] items-start justify-end mt-[10rem] -ml-[35px] text-[10px]"
               >
                 {navLinks.map((nav) => (
@@ -73,11 +87,17 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <ScrollLink
+                      to={nav.id}
+                      smooth={true}
+                      duration={500}
+                      offset={-70}
+                    >
+                      {nav.title}
+                    </ScrollLink>
                   </li>
                 ))}
               </ul>
-
             </div>
           ) : (
             <img

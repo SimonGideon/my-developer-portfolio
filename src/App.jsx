@@ -13,7 +13,7 @@ import {
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0">
+      <div className="relative z-0 scroll-smooth">
         <div>
           <Navbar />
           <Hero />

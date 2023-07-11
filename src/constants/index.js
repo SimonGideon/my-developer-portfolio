@@ -9,7 +9,6 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
   git,
   figma,
   postgresql,
