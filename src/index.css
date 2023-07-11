@@ -50,6 +50,10 @@
   place-items: center;
 }
 
+#socials-ico *{
+  cursor: pointer;
+}
+
 .social-media-button:hover {
   outline-offset: 3px;
   transition: all 0.3s;
