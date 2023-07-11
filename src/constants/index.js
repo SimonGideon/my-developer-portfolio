@@ -159,7 +159,7 @@ const projects = [
       },
     ],
     image: reservation,
-    repo: 'https://github.com/SimonGideon/book-an-appointment-frontend',
+    repo: 'https://github.com/SimonGideon/Alpha-Reservation',
     demo: 'https://book-an-appointment-frontend-jt6ulk7xq-jmonto55.vercel.app/',
     stack: [
       reactjs,

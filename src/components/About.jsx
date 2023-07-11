@@ -38,7 +38,7 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
            I am also a passionate developer who constantly strives to improve my skills and mastery 
-           of new concepts and employ pair-programming and learning the best practices of architecture 
+           of new concepts. I enjoy employing pair-programming and learning the best practices of architecture 
            using React and Ruby on Rails , while having scalability, maintainability, and user needs in 
            mind. Other skills that complement the aforementioned include software testing, version control, 
            building Progressive Web Applications, CI, and design thinking for 
