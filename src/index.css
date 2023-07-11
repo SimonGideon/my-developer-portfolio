@@ -171,6 +171,23 @@
 #mobile-nav * {
   margin: 1rem 0;
 }
+
+/* mobile animation */
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideRight 0.5s ease-in-out;
+}
+
 .hero-heading {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;

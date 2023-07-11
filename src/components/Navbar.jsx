@@ -35,9 +35,8 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
-                active === nav.title ? 'text-french' : 'text-eerieBlack'
-              } hover:text-taupe text-[21px] font-medium font-mova 
+              className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
+                } hover:text-taupe text-[21px] font-medium font-mova 
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -50,8 +49,7 @@ const Navbar = () => {
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${
-                  toggle ? 'menu-open' : 'menu-close'
+                top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'
                 }`}>
               <div className="flex justify-end">
                 <img
@@ -62,24 +60,24 @@ const Navbar = () => {
                 />
               </div>
               <ul id="mobile-nav"
-                className="list-none flex flex-col -gap-[1rem] 
-                items-start justify-end mt-[10rem] -ml-[35px] text-[10px]">
+                className="list-none flex flex-col -gap-[1rem] items-start justify-end mt-[10rem] -ml-[35px] text-[10px]"
+              >
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
-                    className={`${
-                      active === nav.title ? 'text-french' : 'text-eerieBlack'
-                    } text-[1px]!important font-bold font-arenq 
-                      uppercase tracking-[1px] cursor-pointer`}
+                    className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
+                      } text-[1px]!important font-bold font-arenq uppercase tracking-[1px] cursor-pointer slide-right`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
-                    }}>
+                    }}
+                  >
                     <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
               </ul>
+
             </div>
           ) : (
             <img
