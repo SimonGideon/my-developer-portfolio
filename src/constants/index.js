@@ -19,6 +19,9 @@ import {
   metric,
   spaceTravellers,
   microverse,
+  instagram,
+  linkedin,
+  twitter,
 } from '../assets';
 
 export const navLinks = [
@@ -53,6 +56,24 @@ const services = [
     title: 'Software Prototyping',
     icon: prototyping,
   },
+];
+
+const socialsM = [
+  {
+    name:"Instagram",
+    icon: instagram,
+    link: 'https://www.instagram.com/simon_gideon_/'
+  },
+  {
+    name:"Twitter",
+    icon: twitter,
+    link: "https://twitter.com/Simo_Giddy"
+  },
+  {
+    name:"LinkedIn",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/simon-gideon/"
+  }
 ];
 
 const technologies = [
@@ -255,4 +276,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { services, socialsM, technologies, experiences, projects };
