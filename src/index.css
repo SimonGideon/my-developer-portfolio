@@ -11,20 +11,26 @@
 
 /* handle socials */
 :root {
-  --background: #2C2C2C;
+  --background: #43434388;
   --linkedin: #0A66C2;
   --twitter: #1D9BF0;
 }
 
 .background {
+  animation: glow 2s infinite;
+  border: 1px solid whitesmoke;
+  border-radius: 2rem;
   background-color: var(--background);
   display: flex;
   justify-content: right;
   width: fit-content;
-  padding: 1rem;
+  padding: 0.7rem 1rem ;
   float: right;
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  top: 80vh;
+  right: 0;
+  z-index: 9999;
+  right: 1rem;
 }
 
 .social-media-buttons {
@@ -35,8 +41,8 @@
 }
 
 .social-media-button {
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   outline: 2px solid white;
   cursor: pointer;
@@ -72,6 +78,19 @@
 
 .social-media-button:hover:nth-child(3) {
   background-color: var(--linkedin);
+}
+
+/* socials animations */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #60a5fa;
+  }
+  50% {
+    box-shadow: 0 0 10px #60a5fa;
+  }
+  /* 100% {
+    box-shadow: 0 0 5px #ff0000;
+  } */
 }
 
 @font-face {
