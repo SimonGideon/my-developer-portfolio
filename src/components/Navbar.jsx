@@ -47,7 +47,7 @@ const Navbar = () => {
               <ScrollLink
                 to={nav.id}
                 smooth={true}
-                duration={600}
+                duration={500}
                 offset={-70}
               >
                 {nav.title}
