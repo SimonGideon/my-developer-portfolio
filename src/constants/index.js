@@ -115,7 +115,7 @@ const projects = [
   {
     id: 'project-1',
     name: 'GLOBAL UN REFUGEE SUMMIT',
-    description: 'UN Global Summit Advertisement Page that gives information to attendees about the Summit',
+    description: 'UN Global Summit Advertisement Page that gives information to attendees about the Summit.',
     tags: [
       {
         name: 'react',
@@ -143,7 +143,7 @@ const projects = [
     id: 'project-2',
     name: 'Alpha Reservation',
     description:
-      'A reservation app that allows users to reserve a house and pay per night',
+      'A reservation app that allows users to reserve a house and pay per night.',
     tags: [
       {
         name: 'react',
@@ -172,7 +172,7 @@ const projects = [
   {
     id: 'project-3',
     name: 'Bookstore',
-    description: 'React App that enables the user to add and see list of books from external API',
+    description: 'React App that enables the user to add and see list of books from external API.',
     tags: [
       {
         name: 'nextjs',
