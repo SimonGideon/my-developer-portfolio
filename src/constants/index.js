@@ -128,7 +128,7 @@ const experiences = [
     company_name: 'Microverse',
     icon: microverse,
     iconBg: '#333333',
-    date: 'Aug 2022 - May 2022',
+    date: 'Sep 2022 - June 2023',
   }
 ];
 
