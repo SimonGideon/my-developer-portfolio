@@ -61,9 +61,8 @@ const Navbar = () => {
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute 
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'
-                }`}
-            >
+      top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'
+                }`}>
               <div className="flex justify-end">
                 <img
                   src={close}
@@ -72,8 +71,7 @@ const Navbar = () => {
                   onClick={() => setToggle(!toggle)}
                 />
               </div>
-              <ul
-                id="mobile-nav"
+              <ul id="mobile-nav"
                 className="list-none flex flex-col -gap-[1rem] items-start justify-end mt-[10rem] -ml-[35px] text-[10px]"
               >
                 {navLinks.map((nav) => (
@@ -87,17 +85,11 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    <ScrollLink
-                      to={nav.id}
-                      smooth={true}
-                      duration={500}
-                      offset={-70}
-                    >
-                      {nav.title}
-                    </ScrollLink>
+                    <a href={`#${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
               </ul>
+
             </div>
           ) : (
             <img
