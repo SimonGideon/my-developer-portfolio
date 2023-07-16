@@ -152,7 +152,7 @@ const projects = [
       },
     ],
     image: globalsummit,
-    repo: 'https://github.com/SimonGideon/capstone-project---Conference-page/tree/Capstone-milestone',
+    repo: ' https://github.com/SimonGideon/UN-Refugee-global-Summit',
     demo: 'https://simongideon.github.io/capstone-project---Conference-page/',
     stack: [
       html,
