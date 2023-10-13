@@ -55,6 +55,7 @@ import space from './projects/space-hub.png';
 import instagram from './socials/instagram.svg';
 import linkedin from './socials/linkedin.svg';
 import twitter from './socials/twitter.svg';
+import github_socials from './socials/github1.png';
 
 export {
   bwmap,
@@ -105,4 +106,5 @@ export {
   instagram,
   linkedin,
   twitter,
+  github_socials,
 };

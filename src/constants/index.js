@@ -22,6 +22,7 @@ import {
   instagram,
   linkedin,
   twitter,
+  github_socials,
 } from '../assets';
 
 export const navLinks = [
@@ -73,6 +74,12 @@ const socialsM = [
     name:"LinkedIn",
     icon: linkedin,
     link: "https://www.linkedin.com/in/simon-gideon/"
+  },
+
+  {
+    name: "GitHub",
+    icon: github_socials,
+    link: "https://github.com/SimonGideon"
   }
 ];
 
