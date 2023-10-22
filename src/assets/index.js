@@ -50,6 +50,7 @@ import bookstore from './projects/bookstore.jpeg';
 import metric from './projects/metric-app.png';
 import spaceTravellers from './projects/space-travellers.jpeg';
 import space from './projects/space-hub.png';
+import lyriks from './projects/shazam-lyriks.png';
 
 // import socail icons
 import instagram from './socials/instagram.svg';
@@ -58,6 +59,7 @@ import twitter from './socials/twitter.svg';
 import github_socials from './socials/github1.png';
 
 export {
+  lyriks,
   bwmap,
   nairobi,
   whiteabstract,

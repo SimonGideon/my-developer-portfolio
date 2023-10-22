@@ -23,6 +23,7 @@ import {
   linkedin,
   twitter,
   github_socials,
+  lyriks,
 } from '../assets';
 
 export const navLinks = [
@@ -254,26 +255,26 @@ const projects = [
   },
   {
     id: 'project-5',
-    name: 'Space Travellers App',
+    name: 'My Lyriks App',
     description:
-      'Web application for commercial and scientific space travel services allows booking and joining rocket space missions.',
+      'Online Music App that play and display music county wide and world wide',
     tags: [
       {
-        name: 'nextjs',
+        name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'tailwind css',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'API',
         color: 'pink-text-gradient',
       },
     ],
-    image: spaceTravellers,
-    repo: 'https://github.com/SimonGideon/space-travelers',
-    demo: 'https://space-travelers-iyfi.onrender.com/',
+    image: lyriks,
+    repo: 'https://github.com/SimonGideon/lyrics',
+    demo: 'https://s-lyriks.netlify.app/',
     stack: [
       reactjs,
       redux,
