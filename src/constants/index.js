@@ -274,7 +274,7 @@ const projects = [
     ],
     image: lyriks,
     repo: 'https://github.com/SimonGideon/lyrics',
-    demo: 'https://s-lyriks.netlify.app/',
+    demo: 'https://sg-lyriks.netlify.app/',
     stack: [
       reactjs,
       redux,
