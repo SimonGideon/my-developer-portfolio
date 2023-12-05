@@ -47,13 +47,11 @@ const Contact = () => {
       setLoading(true);
       emailjs
         .send(
-          'service_tmz3lye',
-          'template_gh1wsu5',
+          "service_tmz3lye",
+          "template_16dq5y6",
           {
             from_name: form.name,
-            to_name: 'Simon Gideon',
             from_email: form.email,
-            to_email: 'simongideon918@gmail.com',
             message: form.message,
           },
           'RRhuQysRw3tCC4ITi',
