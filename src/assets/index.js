@@ -1,4 +1,5 @@
 import bwmap from './backgrounds/bw-map.jpeg';
+import network from './backgrounds/network.png';
 import nairobi from './backgrounds/nairobi.png';
 import whiteabstract from './backgrounds/white-abstract.png';
 import worldmap from './backgrounds/world-map.png';
@@ -109,4 +110,5 @@ export {
   linkedin,
   twitter,
   github_socials,
+  network,
 };

@@ -8,9 +8,10 @@ const socials = () => {
         <span className=" animate-move relative background">
             <span id="socials-ico" className="social-media-buttons">
                 {socialsM.map((social, index) => (
-                    <span className="social-media-button">
+                    <span key={index} className="social-media-button">
                         <img
                             alt={social.name}
+                            className={social.name}
                             src={social.icon}
                             onClick={() => handleSocialClick(social.link)}
                         />

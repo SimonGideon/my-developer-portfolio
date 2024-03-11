@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
-import { simon, bwmap, worldmap } from '../assets';
+import { simon, bwmap, worldmap, network } from '../assets';
 
 const Hero = () => {
   const [space, setSpace] = useState('\u00A0');
@@ -35,6 +35,13 @@ const Hero = () => {
           className="w-full h-full sm:hidden block object-cover"
         />
       </div>
+      <div className="absolute top-0 left-0 z-100 h-[100vh] w-screen">
+        <img
+          src={network}
+          alt="neural network"
+          className="w-full h-full block object-cover"
+        />
+      </div>
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden">
@@ -53,8 +60,8 @@ const Hero = () => {
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
               Hi, I'm{' '}
               <span
-                className="sm:text-battleGray  sm:text-[90px] 
-                text-eerieBlack text-[50px] font-mova
+                className="sm:text-battleGray  sm:text-[1em] 
+                text-eerieBlack text-[1em] font-mova
                 font-extrabold uppercase">
                 Simon{`${space}`}Gideon
               </span>
@@ -96,9 +103,9 @@ const Hero = () => {
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[50vw] 2xl:ml-[70vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh] z-0"
+            className="absolute bottom-0 ml-[29vw] 
+            lg:ml-[65vw] md:ml-[29vw] xmd:ml-[40vw] 2xl:ml-[50vw]
+            sm:h-[90vh] md:h-[65vh] xl:h-[80vh] z-0"
             src={simon}
             alt="simon"
           />

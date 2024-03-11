@@ -13,7 +13,8 @@
 :root {
   --background: #43434388;
   --linkedin: #0A66C2;
-  --twitter: #1D9BF0;
+  --twitter: #000;
+  --github: #000;
 }
 
 .background {
@@ -81,6 +82,10 @@
 
 .social-media-button:hover:nth-child(3) {
   background-color: var(--linkedin);
+}
+
+.social-media-button:hover:nth-child(4) {
+  background-color: var(--github);
 }
 
 /* socials animations */
