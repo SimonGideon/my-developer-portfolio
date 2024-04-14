@@ -6,6 +6,7 @@ import {
   javascript,
   html,
   css,
+  linux,
   reactjs,
   redux,
   tailwind,
@@ -17,7 +18,6 @@ import {
   reservation,
   bookstore,
   metric,
-  spaceTravellers,
   microverse,
   instagram,
   linkedin,
@@ -92,6 +92,10 @@ const technologies = [
   {
     name: 'CSS 3',
     icon: css,
+  },
+  {
+    name: 'Linux',
+    icon: linux,
   },
   {
     name: 'JavaScript',
