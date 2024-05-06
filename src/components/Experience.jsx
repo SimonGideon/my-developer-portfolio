@@ -1,25 +1,25 @@
 import {
   VerticalTimeline,
   VerticalTimelineElement,
-} from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
-import 'react-vertical-timeline-component/style.min.css';
-import { styles } from '../styles';
-import { experiences } from '../constants';
-import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
-import { textVariant } from '../utils/motion';
+} from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+import "react-vertical-timeline-component/style.min.css";
+import { styles } from "../styles";
+import { experiences } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { download, downloadHover, resume, myResume } from "../assets";
+import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{
-      background: '#eaeaec',
-      color: '#292929',
+      background: "#eaeaec",
+      color: "#292929",
       boxShadow:
-        'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+        "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
     }}
     contentArrowStyle={{
-      borderRight: '7px solid  #232631',
+      borderRight: "7px solid  #232631",
     }}
     date={
       <div>
@@ -37,14 +37,16 @@ const ExperienceCard = ({ experience }) => (
           className="w-[60%] h-[60%] object-contain"
         />
       </div>
-    }>
+    }
+  >
     <div>
       <h3 className="text-jetLight text-[24px] font-bold font-beckman tracking-[2px]">
         {experience.title}
       </h3>
       <p
         className="text-taupe text-[22px] font-semibold font-overcameBold tracking-[1px]"
-        style={{ margin: 0 }}>
+        style={{ margin: 0 }}
+      >
         {experience.company_name}
       </p>
     </div>
@@ -70,18 +72,18 @@ const Experience = () => {
           ))}
           <VerticalTimelineElement
             contentStyle={{
-              background: '#eaeaec',
-              color: '#292929',
+              background: "#eaeaec",
+              color: "#292929",
               boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
+                "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
             contentArrowStyle={{
-              borderRight: '7px solid  #232631',
+              borderRight: "7px solid  #232631",
             }}
-            iconStyle={{ background: '#333333' }}
+            iconStyle={{ background: "#333333" }}
             icon={
               <div className="flex justify-center items-center w-full h-full">
                 <img
@@ -90,7 +92,8 @@ const Experience = () => {
                   className="w-[45%] h-[45%] object-contain"
                 />
               </div>
-            }>
+            }
+          >
             <button
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
@@ -100,22 +103,18 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'https://docs.google.com/document/d/1yKK7KIQElwotRrEae2pQVhOdy2ZQqmO8Q51_i9d-Okg/edit?usp=sharing',
-                  '_blank'
-                )
-              }
+              onClick={() => window.open(`${myResume}`, "_blank")}
               onMouseOver={() => {
                 document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', downloadHover);
+                  .querySelector(".download-btn")
+                  .setAttribute("src", downloadHover);
               }}
               onMouseOut={() => {
                 document
-                  .querySelector('.download-btn')
-                  .setAttribute('src', download);
-              }}>
+                  .querySelector(".download-btn")
+                  .setAttribute("src", download);
+              }}
+            >
               MY RESUME
               <img
                 src={download}
@@ -131,4 +130,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, 'work');
+export default SectionWrapper(Experience, "work");
