@@ -64,7 +64,7 @@ const socialsM = [
   {
     name: "Instagram",
     icon: instagram,
-    link: "https://www.instagram.com/simon_gideon_/",
+    link: "https://www.instagram.com/syntaxsage001/",
   },
   {
     name: "Twitter",
