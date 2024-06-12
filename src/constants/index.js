@@ -17,13 +17,13 @@ import {
   globalsummit,
   reservation,
   bookstore,
-  metric,
   microverse,
   instagram,
   linkedin,
   twitter,
   github_socials,
   lyriks,
+  acl,
 } from "../assets";
 
 export const navLinks = [
@@ -147,7 +147,7 @@ const experiences = [
 const projects = [
   {
     id: "project-1",
-    name: "GLOBAL UN REFUGEE SUMMIT",
+    name: "GLOBAL REFUGEE SUMMIT",
     description:
       "UN Global Summit Advertisement Page that gives information to attendees about the Summit.",
     tags: [
@@ -219,11 +219,11 @@ const projects = [
   },
   {
     id: "project-4",
-    name: "Metric App",
-    description: `A single-page application that shows the statistics if the Population in african countries.`,
+    name: "Audit & Assurance Page",
+    description: `A landing page for a company that offers audit and assurance services outlined for the customers to see.`,
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -235,9 +235,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: metric,
-    repo: "https://github.com/SimonGideon/-React-capstone-project",
-    demo: "https://metric-app.onrender.com/",
+    image: acl,
+    repo: "https://github.com/SimonGideon/",
+    demo: "https://audits-assurance-consult-ltd.vercel.app",
     stack: [reactjs, redux, css, tailwind],
   },
   {

@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import {
   About,
   Contact,
@@ -8,12 +8,12 @@ import {
   Tech,
   Projects,
   Socials,
-} from './components';
+} from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 scroll-smooth">
+      <div className="relative overflow-x-hidden z-0 scroll-smooth">
         <div>
           <Navbar />
           <Hero />
@@ -31,10 +31,12 @@ const App = () => {
 
         <div
           className="bg-experience bg-cover bg-center bg-no-repeat 
-            rounded-tl-[150px] rounded-br-[150px]">
+            rounded-tl-[150px] rounded-br-[150px]"
+        >
           <div
             className="bg-experienceLight bg-cover bg-center 
-            bg-no-repeat rounded-tl-[150px] rounded-br-[130px]">
+            bg-no-repeat rounded-tl-[150px] rounded-br-[130px]"
+          >
             <Experience />
           </div>
         </div>
