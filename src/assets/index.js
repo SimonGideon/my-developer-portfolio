@@ -49,9 +49,7 @@ import microverse from "./company/microverse.png";
 import globalsummit from "./projects/global-sumit.png";
 import reservation from "./projects/reservation.jpeg";
 import bookstore from "./projects/bookstore.jpeg";
-import metric from "./projects/metric-app.png";
-import spaceTravellers from "./projects/space-travellers.jpeg";
-import space from "./projects/space-hub.png";
+import acl from "./projects/audits-assurance.png";
 import lyriks from "./projects/shazam-lyriks.png";
 
 // import socail icons
@@ -73,6 +71,7 @@ export {
   logotext,
   simon,
   backend,
+  acl,
   ux,
   frontend,
   prototyping,
@@ -105,9 +104,6 @@ export {
   globalsummit,
   reservation,
   bookstore,
-  metric,
-  spaceTravellers,
-  space,
   coverhunt,
   dcc,
   kelhel,
