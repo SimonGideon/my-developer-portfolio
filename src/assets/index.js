@@ -24,6 +24,7 @@ import menu from "./icons/menu.png";
 import resume from "./icons/resume.png";
 import send from "./icons/send.png";
 import sendHover from "./icons/sendHover.png";
+import globe from "./icons/globe.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -39,11 +40,14 @@ import typescript from "./tech/typescript.png";
 import graphql from "./tech/graphql.png";
 import postgresql from "./tech/postgresql.png";
 import rubyrails from "./tech/rubyrails.png";
+import aws from "./tech/aws.png";
 
 import coverhunt from "./company/coverhunt.png";
 import dcc from "./company/dcc.png";
 import kelhel from "./company/kelhel.png";
 import microverse from "./company/microverse.png";
+import vabrise from "./company/vabriseTech.png";
+import auditAssuarance from "./company/aaclLogo.png";
 
 // projects images
 import globalsummit from "./projects/global-sumit.png";
@@ -63,6 +67,7 @@ import myResume from "../assets/personal/Simon_Gideon_Resume.pdf";
 
 export {
   lyriks,
+  aws,
   bwmap,
   nairobi,
   whiteabstract,
@@ -72,7 +77,10 @@ export {
   simon,
   backend,
   acl,
+  auditAssuarance,
+  vabrise,
   ux,
+  globe,
   frontend,
   prototyping,
   github,
