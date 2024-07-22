@@ -148,6 +148,7 @@ const experiences = [
     icon: microverse,
     iconBg: "#9D00FF",
     date: "Aug 2022 - Aug 2023",
+    website: "https://www.microverse.org/",
   },
 
   {
@@ -156,6 +157,7 @@ const experiences = [
     icon: auditAssuarance,
     iconBg: "#ffffff",
     date: "Jan 2024 - Mar 2024",
+    website: "https://audits-assurance-consult-ltd.vercel.app",
   },
 
   {
@@ -164,6 +166,7 @@ const experiences = [
     icon: vabrise,
     iconBg: "#ffffff",
     date: "June 2024 - Aug 2024",
+    website: "https://vabrisetech.com/",
   },
 ];
 

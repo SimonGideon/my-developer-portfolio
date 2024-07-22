@@ -7,7 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { download, downloadHover, resume, myResume } from "../assets";
+import { download, downloadHover, resume, myResume, globe } from "../assets";
 import { textVariant } from "../utils/motion";
 
 const ExperienceCard = ({ experience }) => (
@@ -49,6 +49,9 @@ const ExperienceCard = ({ experience }) => (
       >
         {experience.company_name}
       </p>
+      <a href={experience.website} target="_blank">
+        <img className="globe" src={globe} alt="globe" />
+      </a>
     </div>
   </VerticalTimelineElement>
 );

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +12,7 @@
 /* handle socials */
 :root {
   --background: #43434388;
-  --linkedin: #0A66C2;
+  --linkedin: #0a66c2;
   --twitter: #000;
   --github: #000;
 }
@@ -25,7 +25,7 @@
   display: flex;
   justify-content: right;
   width: fit-content;
-  padding: 0.7rem 1rem ;
+  padding: 0.7rem 1rem;
   float: right;
   position: fixed;
   top: 85vh;
@@ -40,6 +40,11 @@
   gap: 24px;
 }
 
+.globe {
+  width: 1.5rem;
+  margin-top: 0.5rem;
+}
+
 .social-media-button {
   width: 2.5rem;
   height: 2.5rem;
@@ -51,7 +56,7 @@
   place-items: center;
 }
 
-#socials-ico *{
+#socials-ico * {
   cursor: pointer;
 }
 
@@ -69,11 +74,14 @@
 }
 
 .social-media-button:hover:nth-child(1) {
-  background:  radial-gradient(
-      circle at 30% 107%, #fdf497 0%, 
-      #fdf497 5%, #fd5949 45%,
-      #d6249f 60%,#285AEB 90%
-  ); 
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
 }
 
 .social-media-button:hover:nth-child(2) {
@@ -111,30 +119,29 @@
   animation: move 1s linear;
 }
 
-
 @font-face {
-  font-family: 'Arenq';
-  src: url('./fonts/arenq.otf');
+  font-family: "Arenq";
+  src: url("./fonts/arenq.otf");
 }
 
 @font-face {
-  font-family: 'Mova';
-  src: url('./fonts/mova.otf');
+  font-family: "Mova";
+  src: url("./fonts/mova.otf");
 }
 
 @font-face {
-  font-family: 'Beckman';
-  src: url('./fonts/beckman.otf');
+  font-family: "Beckman";
+  src: url("./fonts/beckman.otf");
 }
 
 @font-face {
-  font-family: 'Overcame Bold';
-  src: url('./fonts/overcame-bold.woff');
+  font-family: "Overcame Bold";
+  src: url("./fonts/overcame-bold.woff");
 }
 
 @font-face {
-  font-family: 'Overcame Outline';
-  src: url('./fonts/overcame-outline.woff');
+  font-family: "Overcame Outline";
+  src: url("./fonts/overcame-outline.woff");
 }
 
 * {
@@ -146,7 +153,7 @@
 }
 
 .nav-links::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 3px;
@@ -198,7 +205,7 @@
 }
 
 .hero-heading {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
