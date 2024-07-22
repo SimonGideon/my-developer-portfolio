@@ -5,6 +5,7 @@ import {
   prototyping,
   javascript,
   html,
+  aws,
   css,
   linux,
   reactjs,
@@ -18,6 +19,8 @@ import {
   reservation,
   bookstore,
   microverse,
+  auditAssuarance,
+  vabrise,
   instagram,
   linkedin,
   twitter,
@@ -132,6 +135,10 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "aws",
+    icon: aws,
+  },
 ];
 
 const experiences = [
@@ -139,8 +146,24 @@ const experiences = [
     title: "Mentor (Volunteer)",
     company_name: "Microverse",
     icon: microverse,
-    iconBg: "#333333",
+    iconBg: "#9D00FF",
     date: "Aug 2022 - Aug 2023",
+  },
+
+  {
+    title: "Frontend Developer",
+    company_name: "Audit and Assurance Consult Ltd",
+    icon: auditAssuarance,
+    iconBg: "#ffffff",
+    date: "Jan 2024 - Mar 2024",
+  },
+
+  {
+    title: "UI/UX Designer",
+    company_name: "Verbrise Technologies",
+    icon: vabrise,
+    iconBg: "#ffffff",
+    date: "June 2024 - Aug 2024",
   },
 ];
 
